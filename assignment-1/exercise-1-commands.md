@@ -1,27 +1,23 @@
-فرمان arch: این فرمان معماری کامپیوتر را نمایش میدهد؛ نتیجه خروجی در ترمینال سیستم من بصورت x86_64 می‌باشد.
+arch: arch command is used to print the computer architecture.
+          here's the results on my system:
+                    x86_64
 
 
-فرمان uptime: این فرمان زمان از آخرین بوت را نشان میدهد، البته چند پارامتر دارد که نتیجه‌اش در ترمینال سیستم من به این صورت است:
-05:40:08 up 26 min, 1 user, load average: 0.43, 0.62, 0.53
-که
-پارامتر اول: زمان جاری
-پارامتر دوم: مدت زمان از آخرین بوت
-پارامتر سوم: تعداد کاربر ها
-پارامتر چهارم: میانگین های بارگیری(لود) سیستم در بازه های یک، پنج و پانزده دقیقه‌ای؛ مثلا 0.43 میانگین لود در یک دقیقه آخر، 0.62 میانگین لود در پنج دقیقه آخر و 0.53 میانگین لود در پانزده دقیقه آخر.
+uptime: uptime command gives a line display of information including the current time, system running time, users that currently logged on and the system load averages for the past 1, 5, and 15 minutes (0.43, 0.62, 0.53).
+          here's the results on my system:
+                    05:40:08 up 26 min, 1 user, load average: 0.43, 0.62, 0.53
 
 
-فرمان free: میزان آزاد و درگیر بودن حافظه(مموری) را نشان میدهد.
-این خروجی هم اطلاعات مختلفی از جمله مموری استفاده شده توسط بافر های کرنل و حافظه کش را نشان میدهد؛ خروجی در ترمینال سیستم من:
-          total          used          free         shared         buff/cache       available
-mem:      16328712       2009528       12309616     65204          2009568          13962520
-Swap:     947080         0             947080
+free: displays the total amount of free and used physical and swap memory in the system, as well as the buffers and caches used by the kernel.
+          here's the results on my system:
+                              total          used          free         shared         buff/cache       available
+                    mem:      16328712       2009528       12309616     65204          2009568          13962520
+                    Swap:     947080         0             947080
 
 
-فرمان pwd: دایرکتوری که ترمینال در آن لحظه در آنجا در حال اجرا را نشان میدهد. خروجی در ترمینال سیستم من:
-/home/bagher/Desktop
+pwd: prints the complete path of the current working directory.
+          here's the results on my system:
+                    /home/bagher/Desktop
 
 
-فرمان exit: برای بستن یک‌ پنجره از ترمینال استفاده میشود.
-
-
-همچنین ترمینال به حروف بزرگ و کوچک حساس است
+exit: closes a terminal.
