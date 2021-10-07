@@ -1,9 +1,9 @@
-arch: arch command is used to print the computer architecture.
+arch: prints the computer architecture.
           here's the results on my system:
                     x86_64
 
 
-uptime: uptime command gives a line display of information including the current time, system running time, users that currently logged on and the system load averages for the past 1, 5, and 15 minutes (0.43, 0.62, 0.53).
+uptime: gives a line display of information including the current time, system running time, users that currently logged on and the system load averages for the past 1, 5, and 15 minutes (0.43, 0.62, 0.53).
           here's the results on my system:
                     05:40:08 up 26 min, 1 user, load average: 0.43, 0.62, 0.53
 
