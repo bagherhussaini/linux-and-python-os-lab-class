@@ -2,11 +2,9 @@ from random import choice
 words_list = ['family', 'nature', 'study', 'programming', 'parkour',
               'relationship', 'linux', 'windows', 'python', 'cplusplus']
 secret_word = choice(words_list)
-game_mode = int(
-    input('Select the Game Mode by Number:\n1.Easy\n2.Normal\n3.Hard\n'))
+game_mode = int(input('Select the Game Mode by Number:\n1.Easy\n2.Normal\n3.Hard\n'))
 while game_mode <= 0 or game_mode > 3:
-    game_mode = int(
-        input('Enter 1 or 2 or 3 :|\nSelect the Game Mode by Number:\n1.Easy\n2.Normal\n3.Hard\n'))
+    game_mode = int(input('Enter 1 or 2 or 3 :|\nSelect the Game Mode by Number:\n1.Easy\n2.Normal\n3.Hard\n'))
 if game_mode == 1:
     chance = 15
     print('You\'ve Selected Easy\nYou Can Try for 15 Times!(Wrong Guesses)')
