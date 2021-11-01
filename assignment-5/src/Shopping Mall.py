@@ -121,6 +121,7 @@ def search_product():
 def buy():
     index = 0
     found = False
+    valid_purchase = True
     product_name = input('Enter Product\'s Name: ')
     for product in products:
         if product['Name'] == product_name:
@@ -134,6 +135,7 @@ def buy():
     if found:
         if product_quantity > int(products[index]['Stock']):
             print('Not Enough Exists in Stock!')
+            valid_purchase = False
         elif product_quantity == int(products[index]['Stock']):
             f = open('database.csv', 'r')
             lines_of_file = f.readlines()
@@ -151,8 +153,9 @@ def buy():
             lines_of_file[index] = lines_of_file[index].replace(info[3], str(new_stock))
             f.writelines(lines_of_file)
             f.close()
-        print('Details of Shopping:\nProduct Name: ', product_name, '\nQuantity: ', product_quantity,
-              '\nTotal Price: $', product_quantity*int(products[index]['Price']))
+        if valid_purchase:
+            print('Details of Shopping:\nProduct Name: ', product_name, '\nQuantity: ', product_quantity,
+                  '\nTotal Price: $', product_quantity*int(products[index]['Price']))
     else:
         print('The Product You\'re Looking for is Out of Stock!')
 
