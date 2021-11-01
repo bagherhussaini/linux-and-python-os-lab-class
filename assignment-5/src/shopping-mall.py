@@ -46,7 +46,7 @@ def edit_in_stock_product():
         info = lines_of_file[index][:-1].split(',')
         while True:
             choice = input('Which Field of the Product You Wish to Change?\n1.Code\n2.Name\n'
-                           '3.Price\n4.Stock\n5.Finish Editing')
+                           '3.Price\n4.Stock\n5.Finish Editing\n')
             if choice == 'Code' or choice == 'code' or int(choice) == 1:
                 new_code = input('Enter New Code: ')
                 f = open('database.csv', 'w')
@@ -112,7 +112,7 @@ def search_product():
         else:
             index += 1
     if found:
-        print('The Product You Searched is in Stock.\nHere\'s the Details:\n', 'Code Name: ', products[index]['Code'],
+        print('The Product You Searched is in Stock.\nHere\'s the Details:', '\nCode Name: ', products[index]['Code'],
               '\nPrice: ', products[index]['Price'], '\nStock: ', products[index]['Stock'])
     else:
         print('The Product You Searched is Out of Stock!')
