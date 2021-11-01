@@ -125,8 +125,8 @@ def buy_product():
     found = False
     index = 0
     while True:
-        choice = int(input('1.Enter Product\'s Name then Number of That\n2.Show Shopping Details'
-                           '\n3.Save and Quit\n'))
+        choice = int(input('1.Enter Product\'s Name then Number of That\n2.Show Shopping Details and Save Changes'
+                           '\n3.Quit\n'))
         if choice == 1:
             index = 0
             product_name = input('Enter Product\'s Name: ')
