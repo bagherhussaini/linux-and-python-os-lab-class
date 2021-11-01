@@ -185,8 +185,8 @@ def buy_product():
             print('Choose Correctly!')
 
 
-def save_and_quit():
-    exit()
+def quit():
+    exit()#Information is stored by other functions before exit
 
 
 def main():
@@ -207,7 +207,7 @@ def main():
         elif choice == 6:
             buy_product()
         elif choice == 7:
-            save_and_quit()
+            quit()
         else:
             print('Something Went Wrong with Your Choice!')
 
