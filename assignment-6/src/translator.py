@@ -39,11 +39,11 @@ def add_word():
 
 
 def sentence_delimiter(text: str):
-    return str(text).split('.')
+    return text.split('.')
 
 
 def word_delimiter(text: str):
-    return str(text).split(' ')
+    return text.split(' ')
 
 
 def translate_english_to_persian():
