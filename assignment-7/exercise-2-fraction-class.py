@@ -1,5 +1,5 @@
 class Fraction:
-    def __init__(self, numerator, denominator):
+    def __init__(self, numerator=0, denominator=1):
         if not isinstance(numerator, int):
             raise TypeError('The numerator must be an integer!')
         if not isinstance(denominator, int):
@@ -21,6 +21,9 @@ class Fraction:
 
     def __repr__(self):
         return str(self.num) + '/' + str(self.den)
+
+    # def print_fraction(self):
+    #     print(self.num, '/', self.den)
 
     def __add__(self, other):
         num = self.get_numerator() * other.get_denominator() + other.get_numerator() * self.get_denominator()
