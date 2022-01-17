@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Contacts</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(240, 240, 240);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="themeButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>Enable Dark Mode</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="showContactsButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 85, 255);</string>
+      </property>
+      <property name="text">
+       <string>Show Contacts</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="addNewContactButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 0);</string>
+      </property>
+      <property name="text">
+       <string>Add New Contact (Fill the below fields then click)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="firstNameEdit">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>First Name</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lastNameEdit">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Last Name</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="phoneEdit">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Phone</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="mobileEdit">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Mobile</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="emailEdit">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Email</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deleteSpecificContactButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Delete Contact (By ID)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="deletingIDEdit">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>ID</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deleteAllContactsButton">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Delete All Contacts</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
